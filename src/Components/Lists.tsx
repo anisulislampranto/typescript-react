@@ -1,9 +1,12 @@
 import React from 'react';
+import List from './List';
 
 const Lists = () => {
+    const items: string[] = ['hello', 'humans', 'wordl'];
+    const onClick = (text: string): void => alert(text)
     return (
         <div>
-            <h1>hello ts</h1>
+            <List items={items} onClick={onClick}/>
         </div>
     );
 };
